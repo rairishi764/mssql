@@ -6,6 +6,17 @@ ALTER database ap modify name=ap_new
 drop database ap_new
 Create database Company
 
+/* Drop db in azure studio */
+USE master;
+GO
+
+ALTER DATABASE covid_db1 SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+GO
+DROP DATABASE covid_db1;
+GO
+
+
+
 /*Table commands*/
 Use Company  /*if not used table created under master db */
 go
